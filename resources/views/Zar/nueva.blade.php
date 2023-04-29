@@ -152,7 +152,7 @@
 
           <div class="testimonials-card">
 
-            <h4 class="card-title text-center">INTRODUCTORA DE PULPO</h4>
+            <h4 class="card-title text-center">INTRODUCTORA PULPO</h4>
 
             {{-- <div class="testimonials-rating">
               <ion-icon name="star"></ion-icon>
