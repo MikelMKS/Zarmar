@@ -37,6 +37,20 @@ class PaginaWebController extends Controller
         return view('Zar.menu',compact('categorias','categoria','productos','imagenes'));
     }
 
+    
+    public function menuNueva(){
+        $idCategoria = $_REQUEST['categoria'];
+
+        $categorias = DB::connection('mysql')->select("SELECT * FROM categorias WHERE estatus = 0");
+
+        $categoria = DB::connection('mysql')->select("SELECT * FROM categorias WHERE id = '$idCategoria'");
+        $productos = DB::connection('mysql')->select("SELECT * FROM productos WHERE estatus = 0 AND id_categoria = '$idCategoria'");
+        $imagenes = DB::connection('mysql')->select("SELECT * FROM productos WHERE estatus = 0 AND id_categoria = '$idCategoria' AND imagen = 1");
+
+        return view('Zar.menuNueva',compact('categorias','categoria','productos','imagenes'));
+    }
+
+
     public function distribucion(){
         $categorias = DB::connection('mysql')->select("SELECT * FROM categorias WHERE estatus = 0");
 

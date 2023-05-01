@@ -28,7 +28,8 @@
 
     --fs-1: 54px;
     --fs-2: 36px;
-    --fs-3: 20px;
+    --fs-3: 26px;
+    --fs-6: 16px;
 
   }
 
@@ -124,7 +125,8 @@
 
     --fs-1: 72px;
     --fs-2: 40px;
-    --fs-3: 22px;
+    --fs-3: 24px;
+    --fs-6: 18px;
 
     /**
      * spacing 
@@ -199,6 +201,12 @@
    */
 
   .products-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 40px;
+    margin-bottom: 70px;
+  }
+
+  .products-grid3 {
     grid-template-columns: 1fr 1fr;
     gap: 60px 40px;
     margin-bottom: 70px;
@@ -337,7 +345,8 @@
    * PRODUCTS 
    */
 
-  .products-grid { grid-template-columns: repeat(3, 1fr); }
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid3 { grid-template-columns: repeat(3, 1fr); }
 
 
 

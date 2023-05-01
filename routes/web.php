@@ -18,6 +18,7 @@ route::get('/','PaginaWebController@indexZar')->name('indexZar');
 route::get('menu','PaginaWebController@menu')->name('menu');
 route::get('distribucion','PaginaWebController@distribucion')->name('distribucion');
 route::get('nueva','PaginaWebController@nueva')->name('nueva');
+route::get('menuNueva','PaginaWebController@menuNueva')->name('menuNueva');
 
 route::get('admonLvl','SessionController@admonLvl')->name('admonLvl');
 route::post('valida','SessionController@valida')->name('valida');

@@ -116,7 +116,7 @@
           </h4>
 
           @foreach ($categorias as $c)
-          <li style="cursor: pointer" onclick="var categoria = '{{$c->id}}'; window.location.href = ('{{ url('menu') }}' + '?categoria=' + categoria);">
+          <li style="cursor: pointer" onclick="var categoria = '{{$c->id}}'; window.location.href = ('{{ url('menuNueva') }}' + '?categoria=' + categoria);">
             <div class="cart-item">
               <div class="img-box">
                 <img src="./assets/categorias/{{$c->id}}.jpg" alt="product image" class="product-img" width="50" height="50"
@@ -417,12 +417,12 @@
           eligendi rem adipisci quo modi.
         </p> --}}
 
-        <div class="products-grid">
+        <div class="products-grid3">
 
           <a>
             <div class="product-card">
               <div class="img-box">
-                <img src="./img/productos/pulpo4_6.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+                <img src="./img/productos/pulpo4_6.jpg" alt="product image" class="product-img3" width="200" loading="lazy">
               </div>
               <div class="product-content">
                 <div class="wrapper">
@@ -438,7 +438,7 @@
           <a>
             <div class="product-card">
               <div class="img-box">
-                <img src="./img/productos/pulpo2_4.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+                <img src="./img/productos/pulpo2_4.jpg" alt="product image" class="product-img3" width="200" loading="lazy">
               </div>
               <div class="product-content">
                 <div class="wrapper">
@@ -454,7 +454,7 @@
           <a>
             <div class="product-card">
               <div class="img-box">
-                <img src="./img/productos/pulpo1_2.jpg" alt="product image" class="product-img" width="200" loading="lazy">
+                <img src="./img/productos/pulpo1_2.jpg" alt="product image" class="product-img3" width="200" loading="lazy">
               </div>
               <div class="product-content">
                 <div class="wrapper">
