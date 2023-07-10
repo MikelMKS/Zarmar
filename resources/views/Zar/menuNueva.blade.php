@@ -111,9 +111,13 @@
 
         <ul class="cart-box-ul">
 
-          <h4 class="cart-h4" style="display:flex;cursor:pointer;" onclick="$('#cart-box').removeClass('active');">
-              <img src="./assets/images/back.png" alt="shopping cart icon" width="20">&nbsp;Cerrar Menu
-          </h4>
+          <button class="learn-more" onclick="$('#cart-box').removeClass('active');">
+            <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">&nbsp;Cerrar Menu</span>
+          </button>
+
 
           @foreach ($categorias as $c)
           <li style="cursor: pointer" onclick="var categoria = '{{$c->id}}'; window.location.href = ('{{ url('menuNueva') }}' + '?categoria=' + categoria);">
