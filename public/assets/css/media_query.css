@@ -57,7 +57,6 @@
     top:  10%;
     left: 15%;
   }
-
 }
 
 
@@ -230,6 +229,11 @@
   #for desktop
 \*-----------------------------------*/
 
+@media (max-width: 1024px) {
+  .navbar-nav li {
+    width: 100%;
+  }
+}
 @media (min-width: 1024px) {
 
   /**
@@ -264,7 +268,7 @@
     transform: translateY(0);
     padding: 0;
     flex-direction: row;
-    gap: 50px;
+    gap: 20px;
     pointer-events: all;
   }
 
@@ -389,7 +393,7 @@
      * spacing 
      */
 
-    --mw: 1550px;
+    --mw: 1750px;
 
   }
 

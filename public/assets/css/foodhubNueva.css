@@ -181,7 +181,6 @@ html {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  padding: 20px 30px;
   background: hsla(0, 0%, 100%, 0.99);
   /* background: hsla(0, 0%, 0%, 0.99); */
   /* background-image: url('./../../img/tentaculo.png');
@@ -189,6 +188,7 @@ html {
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.05);
   box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.05);
   z-index: 5;
+  padding: 10px 30px;
 }
 
 .navbar-wrapper {
@@ -201,15 +201,15 @@ html {
   background: hsla(0, 0%, 100%, 0.904);
   border-radius: 25px;
   position: absolute;
-  top: 91px;
+  top: 70px;
   left: 0;
   width: 100%;
   height: calc(100vh - 91px);
   display:        flex;
   flex-direction: column;
   align-items:    center;
-  gap: 30px;
-  padding: 35px;
+  /* gap: 30px; */
+  /* padding: 35px; */
   backdrop-filter: blur(10px);
   transform: translateY(50px);
   opacity: 0;
@@ -226,12 +226,60 @@ html {
 }
 
 .nav-link {
-  color: var(--space-cadet);
+  /* color: var(--space-cadet);
   font-size: var(--fs-5);
-  transition: 0.25s ease;
+  transition: 0.25s ease; */
+  font-size: var(--fs-4);
+  padding: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  overflow: visible;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.nav-link:hover { color: var(--blued); }
+.nav-link span {
+  color: rgb(0, 0, 0);
+  font-size: var(--fs-3);
+}
+
+.social-t {
+  background: #fff7db;
+  color: rgb(221, 177, 44);
+}
+
+.social-w {
+  background: #d8ffdf;
+  color: rgb(51, 195, 75);
+}
+
+.social-f {
+  background: #d4d4ff;
+  color: rgb(79, 79, 255);
+}
+
+.social-i {
+  background: #ead4ff;
+  color: rgb(173, 79, 255);
+}
+
+.social-c {
+  background: #e0e0e0;
+  color: rgb(109, 109, 109);
+}
+
+.social-m {
+  background: #fcc5c5;
+  color: rgb(209, 71, 71);
+}
+
+.nav-link:hover { 
+  transform: scale(0.95);
+  transition: all 0.3s;
+}
 
 .navbar-btn-group {
   display:     flex;
@@ -646,6 +694,21 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  margin-top: 1em;
+}
+
+.service-back {
+  padding: 5px;
+  border-radius: 15px;
+  background-image: linear-gradient(144deg,#4d4dde, #819bec 50%,#00DDEB)
+}
+
+.service-card {
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.752);
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
 }
 
 .service-card .card-number {
