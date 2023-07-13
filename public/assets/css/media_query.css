@@ -233,6 +233,11 @@
   .navbar-nav li {
     width: 100%;
   }
+
+  .testimonials {   
+    gap: 50px;
+    padding: 110px var(--px) var(--py); 
+  }
 }
 @media (min-width: 1024px) {
 
@@ -358,7 +363,7 @@
    * TESTIMONIALS 
    */
 
-  .testimonials { padding-bottom: 200px; }
+  .testimonials { padding-bottom: 50px; }
 
 
 

@@ -45,7 +45,7 @@
    */
 
   --px: 30px;
-  --py: 60px;
+  --py: 40px;
 
   /**
    * others 
@@ -447,7 +447,7 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: 50px;
-  padding: var(--py) var(--px) 120px;
+  padding: var(--py) var(--px) 20px;
 }
 
 .home-left { text-align: center; }
@@ -678,7 +678,7 @@ html {
 
 .about-right p {
   max-width: 100%;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 
@@ -958,8 +958,10 @@ html {
 \*-----------------------------------*/
 
 footer {
-  background: rgb(31, 195, 141);
-  padding: 50px var(--px);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgba(82, 198, 159, 0.589);
+  padding: 5px var(--px);
 }
 
 .footer-wrapper {
@@ -972,12 +974,12 @@ footer {
 .social-link {
   display: flex;
   color: var(--white);
-  gap: 15px;
+  gap: 5px;
 }
 
 .social-link ion-icon {
   color: var(--cultured);
-  font-size: 15px;
+  font-size: 10px;
   transition: 0.25s ease;
 }
 
